@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Kosárlabda
+    </title>
+    <link rel="stylesheet" href="kosar.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body onload="count();">
+    <div id="tartalom">
+        <table>
+            <tr>
+                <td rowspan="2"><img src="kosarnagy.jpg" alt="Kosárlabda" title="Kosárlabda"></td>
+                <td><img src="kosar1.jpg" alt="Kosárlabda" title="Kosárlabda"></td>
+                <td><img src="kosar2.jpg" alt="Kosárlabda" title="Kosárlabda"></td>
+                <td><img src="kosar3.jpg" alt="Kosárlabda" title="Kosárlabda"></td>
+            </tr>
+            <tr>
+
+                <td><img src="kosar4.jpg" alt="Kosárlabda" title="Kosárlabda"></td>
+                <td><img src="kosar5.jpg" alt="Kosárlabda" title="Kosárlabda"></td>
+                <td><img src="kosar6.jpg" alt="Kosárlabda" title="Kosárlabda"></td>
+            </tr>
+        </table>
+
+        <a id="tovabb" href="https://www.google.com/search?q=kos%C3%A1rlabda&tbm=isch" target="_blank">További képek...</a>
+        <h1>Kosárlabda</h1>
+        <p>A kosárlabda egy olyan labdajáték, melyet két ötfős csapat játszik. Mindkét csapatnak van egy-egy a pályán egymással szemben 3,05 méter magasan elhelyezett lyukas kosara. A csapatok célja a szabályszerű játék során az, hogy a labdát az ellenfél
+            kosarába dobják, illetve hogy megakadályozzák a másik csapatot ugyanebben.
+            <a href="https://hu.wikipedia.org/wiki/Kos%C3%A1rlabda" target="_blank">Wikipédia</a>
+        </p>
+        <ul>
+            <li><span class="felkover">Legmagasabb irányító testület:</span> FIBA</li>
+            <li><span class="felkover">Csapat létszáma:</span> 5 fő</li>
+            <li><span class="felkover">Első játék:</span> 1891. Springfield, Massachusetts, (USA)</li>
+            <li><span class="felkover">Olimpiai:</span> 1936 óta</li>
+            <li><span class="felkover">Érintés:</span> Van</li>
+            <li><span class="felkover">Pozíciók:</span> center, Irányító, Kiscsatár, Dobóhátvéd, Erőcsatár</li>
+        </ul>
+        <form id="pontszamitas">
+            <h1>Pontszámítás</h1>
+            <p><input type="number" min="0" value="0" id="p3bl" oninput="count();"> távoli kosarak száma 3 pontot ér</p>
+            <p><input type="number" min="0" value="0" id="p2bl" oninput="count();"> középtávoli vagy közeli kosarak száma 2 pontot ér</p>
+            <p><input type="number" min="0" value="0" id="p1bl" oninput="count();"> büntetőből elért kosarak száma 1 pontot ér</p>
+            <h2>Összesen: <span id="resultbl"></span> pont</h2>
+        </form>
+
+    </div>
+</body>
+
+</html>

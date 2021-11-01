@@ -1,0 +1,16 @@
+body{
+    max-width: 800px;   
+    width: auto;
+    margin: 0 auto;
+    background-color: rgb(167,153,153);
+}
+.felkover{
+    font-weight: bold;
+    color: yellow;
+}
+h1{
+    font-variant: small-caps;
+}
+p,li{
+    text-align: justify;
+}
