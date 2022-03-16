@@ -79,6 +79,11 @@ div.middle {
     transition: .25s;
 }
 
+.w3-dropdown-content {
+    border-radius: 16px;
+    background-color: rgb(200, 200, 200) !important
+}
+
 @media (max-width: 900px) {
     div {
        flex-direction: column; 
