@@ -74,6 +74,11 @@ div.middle {
     transform: translateY(-60%);
 }
 
+.w3-bar .w3-button {
+    border-radius: 16px;
+    transition: .25s;
+}
+
 @media (max-width: 900px) {
     div {
        flex-direction: column; 
