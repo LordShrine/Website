@@ -1,7 +1,4 @@
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
     color: purple;
     font-family: Arial;
 }
@@ -10,12 +7,23 @@ h3.left, h1.left {
     padding-left: 20px;
 }
 
-h2.ls {text-align: center;}
+h2.ls {text-align: center}
 
 body {
+    opacity: 1.0;
+    visibility: visible;
+    padding: 0;
+    transform: none;
+    animation: none;
     background-image: url('website_background1.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+h1.shadow {
+    color: black;
+    outline: white;
+    text-shadow: 1px 1px black;
 }
 
 h1.ls {
@@ -27,8 +35,7 @@ h1.ls {
 
 .center {text-align: center;}
 
-td,
-th {
+td, th {
     text-align: center;
     color: blue;
     font-size: 44px;
@@ -54,4 +61,25 @@ li {
     font-size: 30px;
     text-align: left;
     color: purple
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+div.middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+@media (max-width: 900px) {
+    div {
+       flex-direction: column; 
+       align-items: center;
+    }
+    h1, h2, h3, p {
+        color: aqua
+    }
 }
